@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &6507351518038176584
+--- !u!1001 &8341902427162616545
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -10,16 +10,16 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -4299237428844418233, guid: c3120b337915fab45ae2894b6e964060, type: 3}
       propertyPath: m_GravityScale
-      value: 1.5
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2415339863420451787, guid: c3120b337915fab45ae2894b6e964060, type: 3}
       propertyPath: speed
-      value: 5
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 6589196591124075656, guid: c3120b337915fab45ae2894b6e964060, type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 22100000, guid: 5de899d073faf304089a831be8e24642, type: 2}
+      objectReference: {fileID: 22100000, guid: 3d339e8ad819db441b5ffe0500489e5b, type: 2}
     - target: {fileID: 7378636917389242962, guid: c3120b337915fab45ae2894b6e964060, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -63,10 +63,10 @@ PrefabInstance:
     - target: {fileID: 7539039016611689848, guid: c3120b337915fab45ae2894b6e964060, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 192072606, guid: f2cbede0b04c8c840b3395b1d226ef35, type: 3}
+      objectReference: {fileID: 436727931, guid: f2cbede0b04c8c840b3395b1d226ef35, type: 3}
     - target: {fileID: 9221837216230319021, guid: c3120b337915fab45ae2894b6e964060, type: 3}
       propertyPath: m_Name
-      value: BlueBird
+      value: RedBird
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
