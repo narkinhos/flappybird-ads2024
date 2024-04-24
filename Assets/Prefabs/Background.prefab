@@ -16,7 +16,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &8224273123098369852
 Transform:
   m_ObjectHideFlags: 0
@@ -77,8 +77,8 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 9, y: 16}
+  m_DrawMode: 2
+  m_Size: {x: 27, y: 16}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -93,6 +93,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 959156218628693301}
+  - component: {fileID: -1768782586797629903}
+  - component: {fileID: 1530688847224199881}
   m_Layer: 0
   m_Name: Background
   m_TagString: Untagged
@@ -117,6 +119,34 @@ Transform:
   - {fileID: 8224273123098369852}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-1768782586797629903
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8856259503098145474}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 593160299b20eba418c2221d2ac38e8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 2.5
+--- !u!114 &1530688847224199881
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8856259503098145474}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce67e46d26447e84d8d1169645e07fcb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  backgroundNight: {fileID: 6747958797757958107}
+  maxTime: 2.5
+  isNight: 0
 --- !u!1 &8886627650346914001
 GameObject:
   m_ObjectHideFlags: 0
@@ -194,8 +224,8 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 9, y: 16}
+  m_DrawMode: 2
+  m_Size: {x: 27, y: 16}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
