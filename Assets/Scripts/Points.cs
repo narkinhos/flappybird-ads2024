@@ -1,19 +1,25 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Points : MonoBehaviour
 {
-    public GameManager gameManager;
+    public GameController controller;   
 
-    private void Start()
+    void Start(){
+        controller = FindObjectOfType<GameController>();
+        if (controller == null)
     {
-        if (gameManager == null) {
-            var obj = GameObject.FindWithTag("GameController");
-            gameManager = obj.GetComponent<GameManager>();
-        }
+        Debug.LogError("GameController not found in scene!");
     }
-
-    private void OnTriggerEnter2D(Collider2D collision)
+    else
     {
-        gameManager.Score++;
+        Debug.Log("GameController found!");
+    }
+    }
+    void OnTriggerEnter2D(Collider2D colisor){
+        controller.Score++;
+        controller.scoreText.text = controller.Score.ToString();
     }
 }
